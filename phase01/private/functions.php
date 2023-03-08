@@ -1,11 +1,11 @@
 <?php
 
-function urlFor($script_path) {
+function urlFor($scriptPath) {
   // add the leading '/' if not present
-  if($script_path[0] != '/') {
-    $script_path = "/" . $script_path;
+  if($scriptPath[0] != '/') {
+    $scriptPath = "/" . $scriptPath;
   }
-  return WWW_ROOT . $script_path;
+  return WWW_ROOT . $scriptPath;
 }
 
 function u($string="") {
