@@ -1,6 +1,11 @@
 <?php require_once('../../private/initialize.php'); 
 
-$id = $_POST['id'] ?? '1';
+//$id = $_GET['id'] ?? '1';
+
+if (!empty($_GET['id']))
+  $id = $_GET['id'];
+else
+  $id = 1;
   
 $pageTitle = 'Salamander Details';
 
